@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1765220656 source:c:\users\zmill\desktop\please\p7\main.cpp
+	<iostream>
+	"Scheduler.h"
+	"Action.h"
+	"Network.h"
+
+1765220047 source:c:\users\zmill\desktop\please\p7\network.cpp
+	"Network.h"
+	<iostream>
+
+1765218667 source:c:\users\zmill\desktop\please\p7\action.cpp
+	"Action.h"
+
+1765218847 c:\users\zmill\desktop\please\p7\action.h
+	<string>
+	<limits>
+	"AtomicModel.h"
+
+1765218480 c:\users\zmill\desktop\please\p7\atomicmodel.h
+
+1765218755 source:c:\users\zmill\desktop\please\p7\scheduler.cpp
+	"Scheduler.h"
+	"Action.h"
+	"TimeMoment.h"
+	"AtomicModel.h"
+	"EventType.h"
+	<limits>
+	<stdexcept>
+	<iostream>
+
+1765219895 c:\users\zmill\desktop\please\p7\scheduler.h
+	"Heap.h"
+	"Event.h"
+	"Action.h"
+	"TimeMoment.h"
+	"Network.h"
+
+1765218829 c:\users\zmill\desktop\please\p7\heap.h
+	<vector>
+	"Event.h"
+
+1765218840 c:\users\zmill\desktop\please\p7\event.h
+	"TimeMoment.h"
+	"AtomicModel.h"
+	"EventType.h"
+
+1765218480 c:\users\zmill\desktop\please\p7\timemoment.h
+
+1765218480 c:\users\zmill\desktop\please\p7\eventtype.h
+
+1765219883 c:\users\zmill\desktop\please\p7\network.h
+	"Scheduler.h"
+	"AtomicModel.h"
+

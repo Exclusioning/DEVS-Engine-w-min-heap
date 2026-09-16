@@ -1,0 +1,8 @@
+#ifndef EVENTTYPE_H_INCLUDED
+#define EVENTTYPE_H_INCLUDED
+enum class EventType{
+    INTERNAL, EXTERNAL, CONFLUENT
+};
+
+
+#endif // EVENTTYPE_H_INCLUDED
