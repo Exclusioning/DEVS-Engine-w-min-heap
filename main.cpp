@@ -28,7 +28,7 @@ int main()
         double time;
         int quantity;
         cin >> time >> quantity;
-        if(time || quantity == -1){
+        if(time == -1 && quantity == -1){
             break;
         }
         if(time < schedule.input.time){
