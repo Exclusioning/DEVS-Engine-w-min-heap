@@ -28,6 +28,7 @@ FetchContent_MakeAvailable(googletest)
 add_library(blacksmith_lib
     Action.cpp
     Network.cpp
+    Scheduler.cpp
     # Add other implementation .cpp files here (e.g., Scheduler.cpp, etc.)
 )
 
