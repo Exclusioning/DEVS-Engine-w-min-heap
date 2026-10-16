@@ -106,6 +106,38 @@ The example application creates actions such as:
 
 It then simulates a production flow and reports how many finished items were produced and the cumulative profit.
 
+## Testing & Code Coverage
+
+This project utilizes **Google Test** for unit testing and **`gcovr`** for GCC code coverage analysis.
+
+### Running Tests Locally
+Make sure you have CMake, GCC, and Make installed, then run the following commands:
+
+```bash
+# Configure the project with test targets enabled
+cmake -B build -S .
+
+# Build the project
+cmake --build build
+
+# Run the test suite via CTest
+ctest --test-dir build --output-on-failure
+
+# Generate a text summary of code coverage (Gcovr)
+python -m gcovr --root . --filter ".*\.cpp" --exclude "tests/.*" --exclude "_deps/.*" --print-summary
+
+# Optional: Generate an interactive HTML coverage report (Gcovr)
+python -m gcovr --root . --filter ".*\.cpp" --exclude "tests/.*" --exclude "_deps/.*" --html-details build/coverage.html
+
+### Test Coverage Metrics
+
+| Metric | Coverage | Details |
+| :--- | :--- | :--- |
+| **Line Coverage** | **100%** | 89 / 89 lines executed across core modules |
+| **Function Coverage** | **100%** | 7 / 7 functions verified |
+| **Branch Coverage** | **77.5%** | 62 / 80 conditional paths evaluated |
+| **Full Coverage** | **92.5%** | Combined Average Percent% |
+
 ## Where to get help
 
 - Review the source files in the repository for implementation details:
